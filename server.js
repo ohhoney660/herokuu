@@ -8,7 +8,7 @@ app.use(express.static(__dirname + './dist/herokuu'));
 // Start the app by listening on the default
 // Heroku port
 app.get('/', (req, res) => {
-    res.send(path.join(__dirname, '/dist/herokuuindex.html'))
+    res.send(path.join(__dirname, '/dist/herokuu/index.html'))
 })
 app.listen(process.env.PORT || 8080, () => {
     console.log('app started at port:', process.env.PORT );
